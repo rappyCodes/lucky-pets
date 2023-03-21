@@ -31,6 +31,10 @@ const navbarAboutUsLinkOnMobile = document.getElementById(
 const navbarContactUsLinkOnMobile = document.getElementById(
   "navbar__contactus__link--isMobile"
 )
+const isFacebookContactDiv = document.querySelector(".contact__card.isFacebook")
+const isInstagramContactDiv = document.querySelector(
+  ".contact__card.isInstagram"
+)
 kittenCatFoodBtn.addEventListener("click", () => {
   modalImg.src = "assets/images/kitten-cat-food-more-info-for-modal.webp"
   modalHeading.textContent = "More Info for Kitten Cat Food"
@@ -49,3 +53,9 @@ navbarProductsLinkOnMobile.addEventListener("click", closeMobileNav)
 navbarPetCareLinkOnMobile.addEventListener("click", closeMobileNav)
 navbarAboutUsLinkOnMobile.addEventListener("click", closeMobileNav)
 navbarContactUsLinkOnMobile.addEventListener("click", closeMobileNav)
+isFacebookContactDiv.addEventListener("click", function () {
+  window.open("https://www.facebook.com/LuckypetcarePH", "_blank")
+})
+isInstagramContactDiv.addEventListener("click", function () {
+  window.open("https://www.instagram.com/luckypetcare2022/", "_blank")
+})
