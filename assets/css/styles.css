@@ -224,7 +224,7 @@ h6 {
   margin-bottom: 0;
 }
 .proposition {
-  background: url("../images/proposition-illustration.png") no-repeat center;
+  background: url("../images/proposition-illustration.webp") no-repeat center;
   padding: 50px 16px;
 }
 .proposition h1 {
@@ -587,7 +587,7 @@ footer img {
     padding: 54px 32px;
   }
   .mission__illustration__container {
-    background: url("../images/mission-illustration.png") no-repeat center;
+    background: url("../images/mission-illustration.webp") no-repeat center;
     background-size: cover;
   }
   .services {
@@ -602,7 +602,7 @@ footer img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("../images/services-illustration.png") no-repeat center;
+    background: url("../images/services-illustration.webp") no-repeat center;
     background-size: cover;
     z-index: -1;
   }
@@ -708,7 +708,7 @@ footer img {
     padding: 0;
   }
   .blog__illustration__container {
-    background: url("../images/blog-illustration.png") no-repeat center;
+    background: url("../images/blog-illustration.webp") no-repeat center;
     background-size: cover;
   }
   .otherphotos img {
