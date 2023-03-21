@@ -1,0 +1,772 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  color: #333333;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+.navbar {
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__logo {
+  width: 75px;
+}
+.hero h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(40px, 5vw, 60px);
+}
+.hero p {
+  font-family: "Lora", sans-serif;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+.hero__cta__btn {
+  outline: none;
+  background-color: #ff8e3c;
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 16px;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: #333333;
+}
+.hero__cta__btn:hover {
+  background-color: #ff7009;
+  cursor: pointer;
+}
+.products {
+  padding: 54px 0;
+  background-color: #fee5cc;
+}
+.products__grid {
+  margin-top: 125px;
+}
+.products__heading__container p {
+  text-align: center;
+  font-family: "Lora", sans-serif;
+  margin-bottom: 8px;
+}
+.products__heading__container h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(40px, 5vw, 75px);
+}
+.products__card {
+  padding: 54px 16px 16px 16px;
+  background-color: #fffffe;
+  border-radius: 8px;
+  position: relative;
+}
+.products__card:first-of-type {
+  margin-bottom: 125px;
+}
+.products__card img {
+  margin: -150px auto 16px auto;
+}
+.products__card h2 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 8px;
+}
+.products__card p {
+  font-family: "Lora", sans-serif;
+}
+.scrollingTextContainer {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 150px;
+}
+.scroll {
+  white-space: nowrap;
+}
+.scroll div {
+  display: flex;
+  gap: 8px;
+}
+.scroll p {
+  font-size: 75px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+  line-height: 10px;
+}
+.RightToLeft {
+  animation: RightToLeft 10s infinite linear;
+}
+.mission {
+  padding: 50px 16px;
+  background-color: #fee5cc;
+}
+.mission__statement__container h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(40px, 5vw, 60px);
+  margin-bottom: 8px;
+}
+.mission__statement__container p {
+  font-family: "Lora", sans-serif;
+}
+.services {
+  padding: 50px 16px;
+}
+.services p {
+  text-align: center;
+  font-family: "Lora", sans-serif;
+  margin-bottom: 8px;
+}
+.services h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(40px, 5vw, 60px);
+  text-align: center;
+}
+.services__card {
+  padding: 16px 8px;
+  background-color: #fed6de;
+  border-radius: 8px;
+  margin-top: 60px;
+  color: #642f3a;
+}
+.services__card img {
+  margin: -50px auto 16px auto;
+}
+.testimonials__container {
+  padding: 50px 0;
+  background-color: #fee5cc;
+}
+.testimonials__container p {
+  font-family: "Lora", sans-serif;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.testimonials__container h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(40px, 5vw, 75px);
+  text-align: center;
+}
+.testimonial__card {
+  background-color: #fffffe;
+  padding: 16px 16px 24px 16px;
+  border-radius: 8px;
+  margin-top: 100px;
+}
+.testimonial__card img {
+  margin: -85px auto 24px auto;
+}
+.testimonial__card__statement p {
+  text-align: left;
+  margin-bottom: 0;
+}
+.proposition {
+  background: url("../images/proposition-illustration.png") no-repeat center;
+  padding: 50px 16px;
+}
+.proposition h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(50px, 5vw, 100px);
+  text-align: center;
+  color: #fffffe;
+}
+.blog {
+  padding: 50px 16px;
+  background-color: #fee5cc;
+}
+.blog__content p:first-of-type {
+  font-family: "Lora", sans-serif;
+  font-weight: bold;
+}
+.blog__content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(40px, 5vw, 60px);
+  margin-bottom: 8px;
+}
+.blog__content p {
+  font-family: "Lora", sans-serif;
+}
+.contact {
+  padding: 50px 0;
+}
+.contact p {
+  font-family: "Lora", sans-serif;
+  text-align: center;
+  margin-bottom: 8px;
+  color: inherit;
+}
+.contact h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(40px, 5vw, 75px);
+  text-align: center;
+}
+.contact__card {
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: bold;
+  margin-top: 75px;
+}
+.contact__card img {
+  margin: -60px auto 16px auto;
+}
+.contact__card a {
+  text-decoration: none;
+  color: inherit;
+}
+.isFacebook {
+  background-color: #a8bee9;
+  color: #3764b9;
+}
+.isInstagram {
+  background-color: #ffbcb6;
+  color: #ff3a55;
+}
+.isContactNum {
+  background-color: #f89c80;
+  color: #f03800;
+}
+.otherphotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer {
+  padding: 50px 0;
+}
+footer img {
+  margin: 0 auto 24px auto;
+}
+.footer__links__grid__container {
+  display: grid;
+  gap: 24px;
+}
+.footer__links__grid__container h1 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 8px;
+}
+.footer__links__grid__container a,
+.footer__links__grid__container p {
+  text-decoration: none;
+  color: #000;
+  font-family: "Lora", sans-serif;
+  margin-bottom: 0;
+  width: fit-content;
+}
+.copyright {
+  padding: 24px;
+  text-align: center;
+  background-color: #fee5cc;
+}
+.copyright p {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(16px, 2.5vw, 24px);
+}
+@keyframes RightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+/* Hamburger menu */
+.hamburger {
+  cursor: pointer;
+}
+.hamburger input {
+  display: none;
+}
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 3em;
+  /* Define the transition for transforming the SVG */
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line {
+  fill: none;
+  stroke: #ff8e3c;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+/* End */
+/* Menu Overlay */
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #fee5cc; /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #333333;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+  font-family: "Poppins", sans-serif;
+}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 16px;
+    right: 35px;
+  }
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar__links--isOnDesktop {
+  display: none;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #ff8e3c;
+}
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff8e3c;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; /* hide the modal by default */
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5); /* add a semi-transparent overlay */
+}
+.modal-content {
+  max-width: 100%;
+  max-height: 90%; /* or whatever maximum height you want */
+  overflow: auto; /* enable scrolling */
+  background-color: #fff;
+  /* padding: 20px; */
+  border-radius: 5px;
+}
+/* Button styles */
+.modal__trigger {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal__heading__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 16px;
+}
+.modal__heading__button h1 {
+  font-family: "Poppins", sans-serif;
+}
+.modal__heading__closebtn {
+  outline: none;
+  border: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #f3f4f5;
+  transition: all 0.3s;
+}
+.modal__heading__closebtn:hover {
+  background-color: #d5d8df;
+}
+.products__card__button {
+  outline: none;
+  border: none;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff8e3c;
+  position: absolute;
+  right: -8px;
+  bottom: -16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.products__card__button:hover {
+  background-color: #ff7009;
+}
+/* .RightToLeft p:nth-child(n + 3) {
+  display: none;
+} */
+@media only screen and (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+/* Tablet layout */
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0;
+  }
+  .navbar {
+    padding: 16px 32px;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 108px 32px;
+  }
+  .hero__cta__btn {
+    margin-bottom: 16px;
+  }
+  .products {
+    padding: 108px 32px;
+  }
+  .products__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 175px;
+  }
+  .products__card {
+    margin-top: 0;
+  }
+  .products__card:first-of-type {
+    margin-bottom: 0;
+  }
+  .mission {
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .mission__statement__container {
+    padding: 54px 32px;
+  }
+  .mission__illustration__container {
+    background: url("../images/mission-illustration.png") no-repeat center;
+    background-size: cover;
+  }
+  .services {
+    position: relative;
+    z-index: 1;
+    height: 750px;
+  }
+  .services:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/services-illustration.png") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+  }
+  .services__card {
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: -2;
+    bottom: 0;
+    width: 60ch;
+    height: fit-content;
+  }
+  .services__card img {
+    margin-bottom: 8px;
+  }
+  .testimonials__container {
+    padding: 108px 32px;
+  }
+  .testimonial__card__grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .proposition {
+    display: grid;
+    place-items: center;
+    padding: 108px 32px;
+  }
+  .blog {
+    padding: 108px 32px;
+  }
+  .isFacebook a,
+  .isInstagram a,
+  .isContactNum a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .contact {
+    padding: 108px 32px;
+  }
+  .contact__grid__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .otherphotos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  footer {
+    padding: 108px 32px;
+  }
+  .footer__links__grid__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__links__container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .modal-content {
+    max-width: 75%;
+  }
+}
+/* Desktop Layout */
+@media only screen and (min-width: 1024px) {
+  .mission {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    min-height: 750px;
+  }
+  .testimonial__card__grid {
+    gap: 32px;
+    margin-top: 100px;
+  }
+  .testimonial__card {
+    position: relative;
+    width: fit-content;
+    padding: 50px 50px 50px 75px;
+    margin-top: 0;
+  }
+  .testimonial__card:nth-of-type(2) {
+    justify-self: end;
+  }
+  .testimonial__card img {
+    margin-bottom: 0;
+    position: absolute;
+    left: -65px;
+    top: 60%;
+  }
+  .testimonial__card__statement p {
+    width: 75ch;
+  }
+  .proposition {
+    height: 750px;
+    padding: 0;
+    background-size: cover;
+  }
+  .blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+  .blog__illustration__container {
+    background: url("../images/blog-illustration.png") no-repeat center;
+    background-size: cover;
+  }
+  .otherphotos img {
+    width: 100%;
+  }
+  .products__grid {
+    display: flex;
+    justify-content: center;
+  }
+  .products__card {
+    max-width: 300px;
+  }
+  .mission__statement__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .services {
+    height: 800px;
+  }
+  .proposition h1 {
+    max-width: 25ch;
+  }
+  .blog {
+    height: 750px;
+  }
+  .blog__content {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact h1 {
+    max-width: 15ch;
+    margin: 0 auto;
+  }
+  .contact__grid__container {
+    margin-top: 64px;
+  }
+  footer img {
+    margin-bottom: 54px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .navbar__links--isOnDesktop {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  .navbar__links--isOnDesktop a {
+    text-decoration: none;
+    color: #333333;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s;
+  }
+  .navbar__links--isOnDesktop a:hover {
+    color: #ff8e3c;
+  }
+}
+/* End */

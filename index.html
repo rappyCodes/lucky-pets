@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Lucky Pets | Home</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <img
+          class="navbar__logo"
+          src="assets/images/logo.png"
+          alt="Lucky Pets logo"
+        />
+        <div class="navbar__links--isOnDesktop">
+          <a href="#productsSection" class="hover-underline-animation"
+            >Products</a
+          >
+          <a href="#petCareSection" class="hover-underline-animation"
+            >Pet Care</a
+          >
+          <a href="#aboutUsSection" class="hover-underline-animation"
+            >About Us</a
+          >
+          <a href="#contactUsSection" class="hover-underline-animation"
+            >Contact Us</a
+          >
+        </div>
+        <label class="hamburger">
+          <input type="checkbox" id="hamburgerCheckbox" />
+          <svg viewBox="0 0 32 32">
+            <path
+              class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+            ></path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+      </nav>
+      <div id="myNav" class="overlay">
+        <div class="overlay-content">
+          <a href="#productsSection" id="navbar__products__link--isMobile"
+            >Products</a
+          >
+          <a href="#petCareSection" id="navbar__petcare__link--isMobile"
+            >Pet Care</a
+          >
+          <a href="#aboutUsSection" id="navbar__aboutus__link--isMobile"
+            >About Us</a
+          >
+          <a href="#contactUsSection" id="navbar__contactus__link--isMobile"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <section class="hero" id="heroSection">
+        <div>
+          <h1>Fuel your furry friend's appetite with Lucky Pets.</h1>
+          <p>
+            Premium pet products made with the highest quality ingredients and
+            designed to keep your pets happy and healthy. Whether you're looking
+            for food, toys, or accessories, we have everything your pet needs
+            and more.
+          </p>
+          <a href="#productsSection" class="hero__cta__btn">
+            Explore Our Products
+          </a>
+        </div>
+        <div>
+          <img
+            src="assets/images/hero-illustration.svg"
+            alt="Cat and dog illustration"
+          />
+        </div>
+      </section>
+    </div>
+    <section class="products" id="productsSection">
+      <div class="container">
+        <div class="products__heading__container">
+          <p>Discover Our Purrfect Products for Your Furry Friends!</p>
+          <h1>Pet-tastic Picks</h1>
+        </div>
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <div class="modal__heading__button">
+              <h1></h1>
+              <button class="modal__heading__closebtn" onclick="closeModal()">
+                <span class="material-symbols-outlined"> close </span>
+              </button>
+            </div>
+            <img src="" alt="" loading="lazy" />
+          </div>
+        </div>
+        <!-- All Stages Cat Food Modal -->
+        <div class="products__grid">
+          <div class="products__card">
+            <img
+              src="assets/images/kitten-cat-food.png"
+              alt="Kitten Cat Food"
+              loading="lazy"
+            />
+            <h2>Kitten Cat Food</h2>
+            <p>
+              Formulated to meet the nutritional needs of growing kittens, 100%
+              natural ingredients with no artificial colors, flavors, or
+              preservatives
+            </p>
+            <button
+              id="kitten-cat-food-btn"
+              class="products__card__button"
+              onclick="openModal()"
+            >
+              <span class="material-symbols-outlined"> info </span>
+            </button>
+          </div>
+          <div class="products__card">
+            <img
+              src="assets/images/all-stages-cat-food.png"
+              alt="All Stages Cat Food"
+              loading="lazy"
+            />
+            <h2>All Stages Cat Food</h2>
+            <p>
+              Formulated to meet the nutritional needs of growing kittens, 100%
+              natural ingredients with no artificial colors, flavors, or
+              preservatives
+            </p>
+            <button
+              id="all-stages-cat-food-btn"
+              class="products__card__button"
+              onclick="openModal()"
+            >
+              <span class="material-symbols-outlined"> info </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="scrollingTextContainer">
+      <div class="scroll">
+        <div class="RightToLeft">
+          <p>Pawsitively Awesome</p>
+          <p>Pawsitively Awesome</p>
+          <p>Pawsitively Awesome</p>
+          <p>Pawsitively Awesome</p>
+        </div>
+      </div>
+    </div>
+    <section class="mission" id="aboutUsSection">
+      <div class="mission__statement__container">
+        <h1>
+          Improving Pet Lives: Our Mission to Provide High-Quality Pet Food and
+          Products
+        </h1>
+        <p>
+          At Lucky Pets, we're on a mission to make a positive difference in the
+          lives of pets and their owners across the Philippines. We believe that
+          pets are more than just animals – they're family members who deserve
+          the best possible care and attention. That's why we're committed to
+          providing high-quality, nutritious food and reliable products that
+          promote health, happiness, and well-being for pets of all shapes and
+          sizes. But we're not just about selling products – we're also about
+          building relationships. We want to connect with pet owners across the
+          country, share our knowledge and expertise, and support each other in
+          our shared journey of pet ownership. We believe that by creating a
+          strong, compassionate pet community, we can improve the lives of pets
+          and their owners, and create a brighter future for all of us. So join
+          us on this journey, and let's work together to create a world where
+          every pet is loved, cared for, and valued.
+        </p>
+      </div>
+      <div class="mission__illustration__container"></div>
+    </section>
+    <section class="services">
+      <p>Wags and Whiskers: Tailored Service for Your Pet's Needs</p>
+      <h1>What We Do</h1>
+      <div class="services__card">
+        <img
+          src="assets/images/services-icon.png"
+          alt="Heart icon"
+          loading="lazy"
+        />
+        <p>
+          We offer premium pet foods and a variety of high-quality pet foods
+          that are tailored to meet the nutritional needs of your furry friend.
+          Find the perfect food for your pet today!
+        </p>
+      </div>
+    </section>
+    <section class="testimonials__container">
+      <div class="container">
+        <p>Stories of Love and Joy from Lucky Pets' Family of Furry Friends</p>
+        <h1>Pet-timonials</h1>
+        <div class="testimonial__card__grid">
+          <div class="testimonial__card">
+            <img
+              src="assets/images/testimonials-avatar-1.png"
+              alt="Lucky Pets Customer Icon"
+              loading="lazy"
+            />
+            <div class="testimonial__card__statement">
+              <p>
+                I switched my kitten to Lucky Pets' kitten cat food and it has
+                made such a difference in her overall health and development.
+                She's growing so fast and has so much energy! I also feed my
+                adult cat Lucky Pets' all stages cat food and I've noticed a
+                huge improvement in her coat and digestion. The food is made
+                with high-quality ingredients and I feel good knowing that my
+                cats are getting the nutrition they need. I'm a loyal customer
+                of Lucky Pets!
+              </p>
+            </div>
+          </div>
+          <div class="testimonial__card">
+            <img
+              src="assets/images/testimonials-avatar-2.png"
+              alt="Lucky Pets Customer Icon"
+              loading="lazy"
+            />
+            <div class="testimonial__card__statement">
+              <p>
+                I recently purchased some freeze-dried raw food for my cats from
+                Lucky Pets, and they've never been happier or healthier. My
+                kitten loves the kitten cat food and my adult cat is thriving on
+                the all stages cat food. I love that the food is made with real,
+                high-quality ingredients and that it's so convenient to prepare.
+                I highly recommend Lucky Pets' cat food to any cat parent
+                looking to improve their pets' health.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial__card">
+            <img
+              src="assets/images/testimonials-avatar-3.png"
+              alt="Lucky Pets Customer Icon"
+              loading="lazy"
+            />
+            <div class="testimonial__card__statement">
+              <p>
+                I'm so impressed with the selection of cat food available at
+                Lucky Pets! I have a kitten and an adult cat with different
+                nutritional needs, and I've been able to find everything I need
+                at Lucky Pets. The staff were so helpful in guiding me towards
+                the right products for my cats, and I feel good knowing that I'm
+                feeding them high-quality food that supports their health and
+                well-being. Lucky Pets is my go-to pet food supplier!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="proposition">
+      <h1>Where every meal is a tail-wagging, tongue-licking adventure</h1>
+    </section>
+    <section class="blog" id="petCareSection">
+      <div class="blog__illustration__container"></div>
+      <div class="blog__content">
+        <p>Our Blog</p>
+        <h1>
+          Fueling Fido: A Guide to Keeping Your Pup Healthy and Happy with
+          Tail-Waggingly Good Dog Food!
+        </h1>
+        <p>
+          Dogs are beloved pets in the Philippines and choosing the right dog
+          food is essential in ensuring their well-being. Lucky Pets offers a
+          variety of high-quality dog food options that cater to different
+          breeds, sizes, and dietary needs. It is important to ensure that the
+          dog food you choose contains high-quality protein sources and balanced
+          levels of vitamins and minerals. Lucky Pets sources their ingredients
+          from trusted suppliers to guarantee the quality and safety of their
+          products. By choosing Lucky Pets for your dog's nutritional needs, you
+          can rest assured that your furry friend is getting the best possible
+          care. With Lucky Pets, you can be confident that you are providing
+          your dog with the best possible nourishment to keep them healthy and
+          happy.
+        </p>
+      </div>
+    </section>
+    <section class="contact" id="contactUsSection">
+      <div class="container">
+        <p>Get in Touch with Us for All Your Furry Needs</p>
+        <h1>Let's Talk Paws and Claws</h1>
+        <div class="contact__grid__container">
+          <div class="contact__card isFacebook">
+            <img
+              src="assets/images/facebook-icon.png"
+              alt="Facebook logo"
+              loading="lazy"
+            />
+            <p>
+              Visit our Facebook page
+              <a
+                href="https://www.facebook.com/LuckypetcarePH"
+                target="_blank"
+                rel="noopener noreferrer"
+                >here</a
+              >
+            </p>
+          </div>
+          <div class="contact__card isInstagram">
+            <img
+              src="assets/images/instagram-icon.png"
+              alt="Instagram logo"
+              loading="lazy"
+            />
+            <p>
+              Visit our Instagram page
+              <a
+                href="https://www.instagram.com/luckypetcare2022/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >here</a
+              >
+            </p>
+          </div>
+          <div class="contact__card isContactNum">
+            <img
+              src="assets/images/contact-number.png"
+              alt="Contact number icon"
+              loading="lazy"
+            />
+            <p>Talk to us at 09973174574</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="otherphotos">
+      <img
+        src="assets/images/other-photos-1.png"
+        alt="Cat photo with blue background"
+        loading="lazy"
+      />
+      <img
+        src="assets/images/other-photos-2.png"
+        alt="Dog photo with yellow background"
+        loading="lazy"
+      />
+      <img
+        src="assets/images/other-photos-3.png"
+        alt="Dog photo with red background"
+        loading="lazy"
+      />
+      <img
+        src="assets/images/other-photos-4.png"
+        alt="Dog photo with orange background"
+        loading="lazy"
+      />
+    </section>
+    <footer>
+      <div class="container">
+        <div>
+          <img
+            src="assets/images/logo.png"
+            alt="Lucky Pets logo on the footer"
+            loading="lazy"
+          />
+        </div>
+        <div class="footer__links__grid__container">
+          <div>
+            <h1>Shop</h1>
+            <div class="footer__links__container">
+              <a href="#productsSection" class="hover-underline-animation"
+                >Kitten Cat Food</a
+              >
+              <a href="#productsSection" class="hover-underline-animation"
+                >All Stages Cat Food</a
+              >
+            </div>
+          </div>
+          <div>
+            <h1>Support</h1>
+            <div class="footer__links__container">
+              <a
+                href="https://www.facebook.com/LuckypetcarePH"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover-underline-animation"
+                >Facebook</a
+              >
+              <a
+                href="https://www.instagram.com/luckypetcare2022/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover-underline-animation"
+                >Instagram</a
+              >
+              <p>09973174574</p>
+            </div>
+          </div>
+          <div>
+            <h1>Stories</h1>
+            <div class="footer__links__container">
+              <a href="#petCareSection" class="hover-underline-animation"
+                >Choosing the Right Dog Food</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="copyright">
+      <p>© Lucky Pets 2023</p>
+    </section>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>
