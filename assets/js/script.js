@@ -36,12 +36,12 @@ const isInstagramContactDiv = document.querySelector(
   ".contact__card.isInstagram"
 )
 kittenCatFoodBtn.addEventListener("click", () => {
-  modalImg.src = "assets/images/kitten-cat-food-more-info-for-modal.webp"
+  modalImg.src = "assets/images/kitten cat food info for modal.webp"
   modalHeading.textContent = "More Info for Kitten Cat Food"
   openModal()
 })
 allStagesCatFoodBtn.addEventListener("click", () => {
-  modalImg.src = "assets/images/all-stages-cat-food-more-info-for-modal.webp"
+  modalImg.src = "assets/images/all stages cat food info for modal.webp"
   modalHeading.textContent = "More Info for All Stages Cat Food"
   openModal()
 })

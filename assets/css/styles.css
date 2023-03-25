@@ -70,31 +70,31 @@ h6 {
   isolation: isolate;
 }
 .navbar {
-  padding: 16px 0;
+  padding: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .navbar__logo {
-  width: 75px;
+  width: 4.688rem;
 }
 .hero h1 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(40px, 5vw, 60px);
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
 }
 .hero p {
   font-family: "Lora", sans-serif;
-  margin-top: 16px;
-  margin-bottom: 32px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 .hero__cta__btn {
   outline: none;
   background-color: #ff8e3c;
-  padding: 16px 24px;
-  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
   border: none;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   transition: all 0.3s;
   text-decoration: none;
   color: #333333;
@@ -104,37 +104,37 @@ h6 {
   cursor: pointer;
 }
 .products {
-  padding: 54px 0;
+  padding: 3.375rem 0;
   background-color: #fee5cc;
 }
 .products__grid {
-  margin-top: 125px;
+  margin-top: 7.813rem;
 }
 .products__heading__container p {
   text-align: center;
   font-family: "Lora", sans-serif;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 .products__heading__container h1 {
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-size: clamp(40px, 5vw, 75px);
+  font-size: clamp(2.5rem, 5vw, 4.688rem);
 }
 .products__card {
-  padding: 54px 16px 16px 16px;
+  padding: 3.375rem 1rem 2.5rem 1rem;
   background-color: #fffffe;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   position: relative;
 }
 .products__card:first-of-type {
-  margin-bottom: 125px;
+  margin-bottom: 7.813rem;
 }
 .products__card img {
-  margin: -150px auto 16px auto;
+  margin: -9.375rem auto 1rem auto;
 }
 .products__card h2 {
   font-family: "Poppins", sans-serif;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 .products__card p {
   font-family: "Lora", sans-serif;
@@ -143,81 +143,81 @@ h6 {
   display: flex;
   align-items: center;
   overflow: hidden;
-  height: 150px;
+  height: 9.375rem;
 }
 .scroll {
   white-space: nowrap;
 }
 .scroll div {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
 }
 .scroll p {
-  font-size: 75px;
+  font-size: 4.688rem;
   font-family: "Poppins", sans-serif;
   margin-bottom: 0;
-  line-height: 10px;
+  line-height: 0.625rem;
 }
 .RightToLeft {
   animation: RightToLeft 10s infinite linear;
 }
 .mission {
-  padding: 50px 16px;
+  padding: 3.125rem 1rem;
   background-color: #fee5cc;
 }
 .mission__statement__container h1 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(40px, 5vw, 60px);
-  margin-bottom: 8px;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  margin-bottom: 0.5rem;
 }
 .mission__statement__container p {
   font-family: "Lora", sans-serif;
 }
 .services {
-  padding: 50px 16px;
+  padding: 3.125rem 1rem;
 }
 .services p {
   text-align: center;
   font-family: "Lora", sans-serif;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 .services h1 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(40px, 5vw, 60px);
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
   text-align: center;
 }
 .services__card {
-  padding: 16px 8px;
+  padding: 1rem 0.5rem;
   background-color: #fed6de;
-  border-radius: 8px;
-  margin-top: 60px;
+  border-radius: 0.5rem;
+  margin-top: 3.75rem;
   color: #642f3a;
 }
 .services__card img {
-  margin: -50px auto 16px auto;
+  margin: -3.125rem auto 1rem auto;
 }
 .testimonials__container {
-  padding: 50px 0;
+  padding: 3.125rem 0;
   background-color: #fee5cc;
 }
 .testimonials__container p {
   font-family: "Lora", sans-serif;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 .testimonials__container h1 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(40px, 5vw, 75px);
+  font-size: clamp(2.5rem, 5vw, 4.688rem);
   text-align: center;
 }
 .testimonial__card {
   background-color: #fffffe;
-  padding: 16px 16px 24px 16px;
-  border-radius: 8px;
-  margin-top: 100px;
+  padding: 1rem 1rem 1.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 6.25rem;
 }
 .testimonial__card img {
-  margin: -85px auto 24px auto;
+  margin: -5.313rem auto 1.5rem auto;
 }
 .testimonial__card__statement p {
   text-align: left;
@@ -225,16 +225,16 @@ h6 {
 }
 .proposition {
   background: url("../images/proposition-illustration.webp") no-repeat center;
-  padding: 50px 16px;
+  padding: 3.125rem 1rem;
 }
 .proposition h1 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(50px, 5vw, 100px);
+  font-size: clamp(3.125rem, 5vw, 6.25rem);
   text-align: center;
   color: #fffffe;
 }
 .blog {
-  padding: 50px 16px;
+  padding: 3.125rem 1rem;
   background-color: #fee5cc;
 }
 .blog__content p:first-of-type {
@@ -243,34 +243,35 @@ h6 {
 }
 .blog__content h1 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(40px, 5vw, 60px);
-  margin-bottom: 8px;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  margin-bottom: 0.5rem;
 }
 .blog__content p {
   font-family: "Lora", sans-serif;
 }
 .contact {
-  padding: 50px 0;
+  padding: 3.125rem 0;
 }
 .contact p {
   font-family: "Lora", sans-serif;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   color: inherit;
+  font-size: 1.125rem;
 }
 .contact h1 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(40px, 5vw, 75px);
+  font-size: clamp(2.5rem, 5vw, 4.688rem);
   text-align: center;
 }
 .contact__card {
-  padding: 16px;
-  border-radius: 16px;
+  padding: 1rem;
+  border-radius: 1rem;
   font-weight: bold;
-  margin-top: 75px;
+  margin-top: 4.688;
 }
 .contact__card img {
-  margin: -60px auto 16px auto;
+  margin: -3.75rem auto 1rem auto;
 }
 .contact__card a {
   text-decoration: none;
@@ -284,27 +285,32 @@ h6 {
   background-color: #ffbcb6;
   color: #ff3a55;
 }
-.isContactNum {
-  background-color: #f89c80;
-  color: #f03800;
+.isWhatsapp {
+  background-color: #b3eacb;
+  color: #009440;
 }
 .otherphotos {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 footer {
-  padding: 50px 0;
+  padding: 3.125rem 0;
 }
 footer img {
-  margin: 0 auto 24px auto;
+  margin: 0 auto 3rem auto;
+}
+.footer__links__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 .footer__links__grid__container {
   display: grid;
-  gap: 24px;
+  gap: 3rem;
 }
 .footer__links__grid__container h1 {
   font-family: "Poppins", sans-serif;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 .footer__links__grid__container a,
 .footer__links__grid__container p {
@@ -315,13 +321,13 @@ footer img {
   width: fit-content;
 }
 .copyright {
-  padding: 24px;
+  padding: 3rem;
   text-align: center;
   background-color: #fee5cc;
 }
 .copyright p {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(16px, 2.5vw, 24px);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 @keyframes RightToLeft {
   from {
@@ -385,13 +391,13 @@ footer img {
   top: 25%; /* 25% from the top */
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  margin-top: 2rem; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 /* The navigation links inside the overlay */
 .overlay a {
-  padding: 8px;
+  padding: 0.5rem;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 2.5rem;
   color: #333333;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
@@ -400,12 +406,12 @@ footer img {
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
   .overlay a {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .overlay .closebtn {
-    font-size: 40px;
-    top: 16px;
-    right: 35px;
+    font-size: 2.5rem;
+    top: 1rem;
+    right: 2.188rem;
   }
 }
 .container {
@@ -454,17 +460,7 @@ footer img {
   max-height: 90%; /* or whatever maximum height you want */
   overflow: auto; /* enable scrolling */
   background-color: #fff;
-  /* padding: 20px; */
-  border-radius: 5px;
-}
-/* Button styles */
-.modal__trigger {
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 0.5rem;
 }
 .modal__heading__button {
   display: flex;
@@ -500,8 +496,8 @@ footer img {
   border-radius: 50%;
   background-color: #ff8e3c;
   position: absolute;
-  right: -8px;
-  bottom: -16px;
+  right: -0.5rem;
+  bottom: -1rem;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -511,39 +507,39 @@ footer img {
 /* .RightToLeft p:nth-child(n + 3) {
   display: none;
 } */
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 575.9808px) {
   .container {
     max-width: 100%;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+@media only screen and (min-width: 576px) and (max-width: 767.9808px) {
   .container {
     max-width: 540px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+@media only screen and (min-width: 768px) and (max-width: 991.9808px) {
   .container {
     max-width: 720px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+@media only screen and (min-width: 992px) and (max-width: 1199.9808px) {
   .container {
     max-width: 960px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1140px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 /* Tablet layout */
@@ -552,25 +548,25 @@ footer img {
     padding: 0;
   }
   .navbar {
-    padding: 16px 32px;
+    padding: 1rem 2rem;
   }
   .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 108px 32px;
+    padding: 6.75rem 2rem;
   }
   .hero__cta__btn {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
   .products {
-    padding: 108px 32px;
+    padding: 6.75rem 2rem;
   }
   .products__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-top: 175px;
+    gap: 1rem;
+    margin-top: 10.938rem;
   }
   .products__card {
     margin-top: 0;
@@ -584,7 +580,7 @@ footer img {
     grid-template-rows: 1fr 1fr;
   }
   .mission__statement__container {
-    padding: 54px 32px;
+    padding: 3.375rem 1rem;
   }
   .mission__illustration__container {
     background: url("../images/mission-illustration.webp") no-repeat center;
@@ -593,7 +589,7 @@ footer img {
   .services {
     position: relative;
     z-index: 1;
-    height: 750px;
+    height: 46.875rem;
   }
   .services:before {
     content: "";
@@ -618,23 +614,23 @@ footer img {
     height: fit-content;
   }
   .services__card img {
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
   .testimonials__container {
-    padding: 108px 32px;
+    padding: 6.75rem 2rem;
   }
   .testimonial__card__grid {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    gap: 16px;
+    gap: 1rem;
   }
   .proposition {
     display: grid;
     place-items: center;
-    padding: 108px 32px;
+    padding: 6.75rem 2rem;
   }
   .blog {
-    padding: 108px 32px;
+    padding: 6.75rem 2rem;
   }
   .isFacebook a,
   .isInstagram a,
@@ -643,26 +639,21 @@ footer img {
     color: inherit;
   }
   .contact {
-    padding: 108px 32px;
+    padding: 6.75rem 2rem;
   }
   .contact__grid__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    gap: 1rem;
   }
   .otherphotos {
     grid-template-columns: repeat(4, 1fr);
   }
   footer {
-    padding: 108px 32px;
+    padding: 6.75rem 2rem;
   }
   .footer__links__grid__container {
     grid-template-columns: repeat(3, 1fr);
-  }
-  .footer__links__container {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
   }
   .modal-content {
     max-width: 75%;
@@ -673,16 +664,16 @@ footer img {
   .mission {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
-    min-height: 750px;
+    min-height: 46.875rem;
   }
   .testimonial__card__grid {
-    gap: 32px;
-    margin-top: 100px;
+    gap: 2rem;
+    margin-top: 6.25rem;
   }
   .testimonial__card {
     position: relative;
     width: fit-content;
-    padding: 50px 50px 50px 75px;
+    padding: 3.125rem 3.125rem 3.125rem 4.688rem;
     margin-top: 0;
   }
   .testimonial__card:nth-of-type(2) {
@@ -698,7 +689,7 @@ footer img {
     width: 75ch;
   }
   .proposition {
-    height: 750px;
+    height: 46.875rem;
     padding: 0;
     background-size: cover;
   }
@@ -719,7 +710,7 @@ footer img {
     justify-content: center;
   }
   .products__card {
-    max-width: 300px;
+    max-width: 25rem;
   }
   .mission__statement__container {
     display: flex;
@@ -727,16 +718,16 @@ footer img {
     justify-content: center;
   }
   .services {
-    height: 800px;
+    height: 50rem;
   }
   .proposition h1 {
     max-width: 25ch;
   }
   .blog {
-    height: 750px;
+    min-height: 46.875rem;
   }
   .blog__content {
-    padding: 0 32px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -746,17 +737,17 @@ footer img {
     margin: 0 auto;
   }
   .contact__grid__container {
-    margin-top: 64px;
+    margin-top: 4rem;
   }
   footer img {
-    margin-bottom: 54px;
+    margin-bottom: 3.375rem;
   }
   .hamburger {
     display: none;
   }
   .navbar__links--isOnDesktop {
     display: flex;
-    gap: 24px;
+    gap: 1.5rem;
     align-items: center;
   }
   .navbar__links--isOnDesktop a {
