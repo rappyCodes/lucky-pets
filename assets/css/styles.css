@@ -39,6 +39,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 /*
   7. Remove built-in form typography styles
@@ -264,6 +265,9 @@ h6 {
   flex-direction: column;
   gap: 4rem;
   margin-top: 4rem;
+}
+.contact__grid__container div {
+  cursor: pointer;
 }
 .contact h1 {
   font-family: "Poppins", sans-serif;
