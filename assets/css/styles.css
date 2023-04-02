@@ -259,6 +259,12 @@ h6 {
   color: inherit;
   font-size: 1.125rem;
 }
+.contact__grid__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 4rem;
+}
 .contact h1 {
   font-family: "Poppins", sans-serif;
   font-size: clamp(2.5rem, 5vw, 4.688rem);
