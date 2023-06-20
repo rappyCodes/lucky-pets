@@ -1,37 +1,20 @@
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-/*
-  2. Remove default margin
-*/
 * {
   margin: 0;
 }
-/*
-  3. Allow percentage-based heights in the application
-*/
 html,
 body {
   height: 100%;
   scroll-behavior: smooth;
 }
-/*
-  Typographic tweaks!
-  4. Add accessible line-height
-  5. Improve text rendering
-*/
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-/*
-  6. Improve media defaults
-*/
 img,
 picture,
 video,
@@ -41,18 +24,12 @@ svg {
   max-width: 100%;
   height: auto;
 }
-/*
-  7. Remove built-in form typography styles
-*/
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
-/*
-  8. Avoid text overflows
-*/
 p,
 h1,
 h2,
@@ -63,9 +40,6 @@ h6 {
   overflow-wrap: break-word;
   color: #333333;
 }
-/*
-  9. Create a root stacking context
-*/
 #root,
 #__next {
   isolation: isolate;
@@ -122,10 +96,13 @@ h6 {
   font-size: clamp(2.5rem, 5vw, 4.688rem);
 }
 .products__card {
-  padding: 3.375rem 1rem 2.5rem 1rem;
+  padding: 3.375rem 1rem 1.5rem 1rem;
   background-color: #fffffe;
   border-radius: 0.5rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .products__card:first-of-type {
   margin-bottom: 7.813rem;
@@ -168,7 +145,7 @@ h6 {
 }
 .mission__statement__container h1 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-size: clamp(1.875rem, 5vw, 2.5rem);
   margin-bottom: 0.5rem;
 }
 .mission__statement__container p {
@@ -279,6 +256,10 @@ h6 {
   border-radius: 1rem;
   font-weight: bold;
   margin-top: 4.688;
+  transition: transform 0.3s ease;
+}
+.contact__card:hover {
+  transform: translateY(-10px);
 }
 .contact__card img {
   margin: -3.75rem auto 1rem auto;
@@ -496,102 +477,102 @@ footer img {
 .modal__heading__closebtn:hover {
   background-color: #d5d8df;
 }
-.products__card__button {
-  outline: none;
+.products__card__button,
+.brochure-dl button {
   border: none;
-  display: grid;
-  place-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  outline: none;
+  padding: 10px 20px;
   background-color: #ff8e3c;
-  position: absolute;
-  right: -0.5rem;
-  bottom: -1rem;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  margin-top: 20px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: background-color 0.3s;
 }
-.products__card__button:hover {
+.products__card__button:hover,
+.brochure-dl button:hover {
   background-color: #ff7009;
 }
-svg#freepik_stories-cat-and-dog:not(.animated) .animable {
-  opacity: 0;
+.products__benefits__container {
+  margin-top: 50px;
 }
-svg#freepik_stories-cat-and-dog.animated
-  #freepik--background-complete--inject-3 {
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-  animation-delay: 0s;
+.products__benefits__container h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: clamp(2.5rem, 5vw, 4.688rem);
 }
-svg#freepik_stories-cat-and-dog.animated #freepik--Hearts--inject-3 {
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-  animation-delay: 0s;
+.products__benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
-svg#freepik_stories-cat-and-dog.animated #freepik--Plants--inject-3 {
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
-  animation-delay: 0s;
+.products__benefits__card {
+  padding: 1rem;
+  background-color: #fffffe;
+  border-radius: 5px;
+  text-align: center;
 }
-svg#freepik_stories-cat-and-dog.animated #freepik--Dog--inject-3 {
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight,
-    1.5s Infinite linear floating;
-  animation-delay: 0s, 1s;
+.products__benefits__card img {
+  max-width: 64px;
+  margin: 0 auto 1rem auto;
 }
-svg#freepik_stories-cat-and-dog.animated #freepik--Cat--inject-3 {
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft,
-    1.5s Infinite linear floating;
-  animation-delay: 0s, 1s;
+.products__benefits__card p {
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  font-size: clamp(14px, 2.5vw, 16px);
 }
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: inherit;
-  }
+.missionvision__card {
+  background-color: #fffffe;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
-@keyframes slideDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.missionvision__card img {
+  max-width: 64px;
+  margin: 0 auto 20px auto;
 }
-@keyframes slideRight {
-  0% {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.brandedges {
+  padding: 50px 0;
 }
-@keyframes floating {
-  0% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+.brandedges p {
+  font-family: "Lora", sans-serif;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
-@keyframes slideLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.brandedges h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+}
+.edge__card {
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.edge__card h1,
+.edge__card p {
+  text-align: left;
+}
+.edge__card h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.edge__grid__container {
+  margin-top: 50px;
+}
+.brochure-dl {
+  padding: 3.125rem 0;
+  text-align: center;
+}
+.brochure-dl h1 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.875rem, 5vw, 2.5rem);
+}
+.brochure-dl p {
+  font-family: "Lora", sans-serif;
 }
 @media only screen and (max-width: 575.9808px) {
   .container {
@@ -666,10 +647,10 @@ svg#freepik_stories-cat-and-dog.animated #freepik--Cat--inject-3 {
     grid-template-rows: 1fr 1fr;
   }
   .mission__statement__container {
-    padding: 3.375rem 1rem;
+    padding: 3.375rem 2rem;
   }
   .mission__illustration__container {
-    background: url("../images/mission-illustration.webp") no-repeat center;
+    background: url("../images/mnv-illustration.webp") no-repeat center;
     background-size: cover;
   }
   .services {
@@ -744,9 +725,47 @@ svg#freepik_stories-cat-and-dog.animated #freepik--Cat--inject-3 {
   .modal-content {
     max-width: 75%;
   }
+  .products__benefits__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .missionvision__grid__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .brandedges {
+    padding: 50px 32px;
+  }
+  .edge__grid__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .edge__card {
+    margin-bottom: 0;
+  }
+  .brochure-dl {
+    padding: 6.75rem 0;
+  }
+  .brochure-dl p {
+    max-width: 50ch;
+    margin: 0 auto;
+  }
 }
 /* Desktop Layout */
 @media only screen and (min-width: 1024px) {
+  .hero {
+    grid-template-columns: 1.25fr 1fr;
+    padding: 6.75rem 2rem 12.5rem 2rem;
+  }
+  .hero__container {
+    position: relative;
+  }
+  .hero img {
+    position: absolute;
+    bottom: 23%;
+    right: -40px;
+  }
   .mission {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
@@ -802,12 +821,13 @@ svg#freepik_stories-cat-and-dog.animated #freepik--Cat--inject-3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: url("../images/mnv-patterns.svg");
   }
   .services {
     height: 50rem;
   }
   .proposition h1 {
-    max-width: 25ch;
+    max-width: 15ch;
   }
   .blog {
     min-height: 46.875rem;
@@ -844,6 +864,34 @@ svg#freepik_stories-cat-and-dog.animated #freepik--Cat--inject-3 {
   }
   .navbar__links--isOnDesktop a:hover {
     color: #ff8e3c;
+  }
+  .products__card__button {
+    align-self: flex-end;
+  }
+  .products__benefits__grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .edge__grid__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .brandedges {
+    padding: 6.75rem 2rem;
+    background-image: url("../images/patterns-2.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .brochure-dl h1 {
+    max-width: 25ch;
+    margin: 0 auto 1.25rem auto;
+  }
+  .brochure-dl {
+    background-image: url("../images/brochure-dl-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 /* End */
