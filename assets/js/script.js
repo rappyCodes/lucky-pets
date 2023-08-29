@@ -17,6 +17,8 @@ function closeModal() {
 }
 const kittenCatFoodBtn = document.getElementById("kitten-cat-food-btn")
 const allStagesCatFoodBtn = document.getElementById("all-stages-cat-food-btn")
+const allStagesNutritionalAnalysisBtn = document.getElementById("all-stages-nutritional-analysis-btn")
+const kittenCatFoodNutritionalAnalysisBtn = document.getElementById("kitten-cat-food-nutritional-analysis-btn")
 const modalImg = document.querySelector("#myModal img")
 const modalHeading = document.querySelector("#myModal h1")
 const navbarProductsLinkOnMobile = document.getElementById(
@@ -43,6 +45,16 @@ kittenCatFoodBtn.addEventListener("click", () => {
 allStagesCatFoodBtn.addEventListener("click", () => {
   modalImg.src = "assets/images/all stages cat food info for modal.webp"
   modalHeading.textContent = "More Info for All Stages Cat Food"
+  openModal()
+})
+allStagesNutritionalAnalysisBtn.addEventListener("click", () => {
+  modalImg.src = "assets/images/all-stages-nutritional-analysis-image.png"
+  modalHeading.textContent = "Nutritional Analysis of All Stages Cat Food"
+  openModal()
+})
+kittenCatFoodNutritionalAnalysisBtn.addEventListener("click", () => {
+  modalImg.src = "assets/images/kitten-cat-food-nutritional-analysis.png"
+  modalHeading.textContent = "Nutritional Analysis of Kitten Cat Food"
   openModal()
 })
 function closeMobileNav() {

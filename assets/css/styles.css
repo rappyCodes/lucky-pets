@@ -51,7 +51,8 @@ h6 {
   justify-content: space-between;
 }
 .navbar__logo {
-  width: 4.688rem;
+  max-width: 100px;
+  height: auto;
 }
 .hero h1 {
   font-family: "Poppins", sans-serif;
@@ -81,6 +82,7 @@ h6 {
 .products {
   padding: 3.375rem 0;
   background-color: #fee5cc;
+  margin-top: 3.125rem;
 }
 .products__grid {
   margin-top: 7.813rem;
@@ -103,12 +105,15 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 150px
 }
 .products__card:first-of-type {
   margin-bottom: 7.813rem;
 }
 .products__card img {
-  margin: -9.375rem auto 1rem auto;
+  margin: -12.375rem auto 1rem auto;
+  width: 75%;
+  height: auto;
 }
 .products__card h2 {
   font-family: "Poppins", sans-serif;
@@ -202,7 +207,10 @@ h6 {
   margin-bottom: 0;
 }
 .proposition {
-  background: url("../images/proposition-illustration.webp") no-repeat center;
+  /* background: url("/assets/images/cat-faces-background.jpg") no-repeat center; */
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/cat-faces-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 3.125rem 1rem;
 }
 .proposition h1 {
@@ -486,16 +494,15 @@ footer img {
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
   color: #333333;
-  margin-top: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+.brochure-dl button {
+  margin-top: 1.25rem;
 }
 .products__card__button:hover,
 .brochure-dl button:hover {
   background-color: #ff7009;
-}
-.products__benefits__container {
-  margin-top: 50px;
 }
 .products__benefits__container h1 {
   font-family: "Poppins", sans-serif;
@@ -510,7 +517,7 @@ footer img {
 }
 .products__benefits__card {
   padding: 1rem;
-  background-color: #fffffe;
+  background-color: #fee5cc;
   border-radius: 5px;
   text-align: center;
 }
@@ -574,6 +581,47 @@ footer img {
 .brochure-dl p {
   font-family: "Lora", sans-serif;
 }
+.catfood__benefits {
+  padding: 3.375rem 1rem 0 1rem;
+}
+.pricing {
+  padding: 3.125rem 0;
+  background-color: #fee5cc;
+}
+.pricing__card {
+  background-color: #fffffe;
+  border-radius: .625rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+.pricing__card h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #333333;
+}
+.pricing__card p {
+  font-family: 'Lora', sans-serif;
+  color: #333333;
+}
+.pricing__text__content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+.pricing__text__content p {
+  text-align: center;
+  font-family: "Lora", sans-serif;
+  margin-bottom: 0.5rem;
+}
+.pricing__grid {
+  display: grid;
+  gap: 16px;
+}
+.products__card__buttons__container {
+  display: flex;
+  flex-direction: column;
+  gap: .625rem;
+  margin-top: 1rem;
+}
 @media only screen and (max-width: 575.9808px) {
   .container {
     max-width: 100%;
@@ -617,17 +665,27 @@ footer img {
   .navbar {
     padding: 1rem 2rem;
   }
-  .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 6.75rem 2rem;
+  .hero__section {
+    background-image: url('/assets/images/hero-image.jpg');
+    background-size: cover;
+    height: calc(100vh);
+    background-position: center 70%;
+    background-repeat: no-repeat;
+  }
+  .hero__text__content__container {
+    padding: 2rem;
+    text-align: center;
+  }
+  .hero__text__content__container p {
+    max-width: 40ch;
+    margin: 0.625rem auto 2rem auto;
   }
   .hero__cta__btn {
     margin-bottom: 1rem;
   }
   .products {
     padding: 6.75rem 2rem;
+    margin-top: 0;
   }
   .products__grid {
     display: grid;
@@ -719,6 +777,10 @@ footer img {
   footer {
     padding: 6.75rem 2rem;
   }
+  .footer__logo {
+    max-width: 200px;
+    height: auto;
+  }
   .footer__links__grid__container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -751,20 +813,20 @@ footer img {
     max-width: 50ch;
     margin: 0 auto;
   }
+  .catfood__benefits {
+    padding: 6.75rem 2rem 0 2rem;
+  }
+  .pricing {
+    padding: 3.125rem 2rem;
+  }
+  .pricing__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /* Desktop Layout */
 @media only screen and (min-width: 1024px) {
-  .hero {
-    grid-template-columns: 1.25fr 1fr;
-    padding: 6.75rem 2rem 12.5rem 2rem;
-  }
-  .hero__container {
-    position: relative;
-  }
-  .hero img {
-    position: absolute;
-    bottom: 23%;
-    right: -40px;
+  .hero__text__content__container p {
+    max-width: 65ch;
   }
   .mission {
     grid-template-columns: 1fr 1fr;
@@ -892,6 +954,35 @@ footer img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+  .catfood__benefits {
+    background-image: url('/assets/images/catfood-in-a-bowl.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 6.75rem;
+  }
+  .products__benefits__card {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .products__benefits__card p {
+    color: #fffffe;
+  }
+  .products__benefits__container h1 {
+    color: #fffffe;
+  }
+  .pricing__grid {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+  .pricing {
+    padding: 6.75rem 0;
+  }
+  .products__card__buttons__container {
+    flex-direction: row;
+    align-items: center;
   }
 }
 /* End */

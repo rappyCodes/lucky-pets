@@ -25,66 +25,66 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-    <link rel="stylesheet" href="assets/css/styles-min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>
       Nourish Your Furry Friends with High-Quality Pet Food | Lucky Pets
     </title>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar">
-        <img
-          class="navbar__logo"
-          src="assets/images/logo.webp"
-          width="100"
-          height="56"
-          alt="Lucky Pets logo"
-        />
-        <div class="navbar__links--isOnDesktop">
-          <a href="#productsSection" class="hover-underline-animation"
-            >Products</a
-          >
-          <a href="#petCareSection" class="hover-underline-animation"
-            >Pet Care</a
-          >
-          <a href="#aboutUsSection" class="hover-underline-animation"
-            >About Us</a
-          >
-          <a href="#contactUsSection" class="hover-underline-animation"
-            >Contact Us</a
-          >
-        </div>
-        <label class="hamburger">
-          <input type="checkbox" id="hamburgerCheckbox" />
-          <svg viewBox="0 0 32 32">
-            <path
-              class="line line-top-bottom"
-              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
-            ></path>
-            <path class="line" d="M7 16 27 16"></path>
-          </svg>
-        </label>
-      </nav>
-      <div id="myNav" class="overlay">
-        <div class="overlay-content">
-          <a href="#productsSection" id="navbar__products__link--isMobile"
-            >Products</a
-          >
-          <a href="#petCareSection" id="navbar__petcare__link--isMobile"
-            >Pet Care</a
-          >
-          <a href="#aboutUsSection" id="navbar__aboutus__link--isMobile"
-            >About Us</a
-          >
-          <a href="#contactUsSection" id="navbar__contactus__link--isMobile"
-            >Contact Us</a
-          >
+    <section class="hero__section">
+      <div class="container">
+        <nav class="navbar">
+          <img
+            class="navbar__logo"
+            src="assets/images/lpc-logo-navbar.png"
+            width="16000"
+            height="9000"
+            alt="Lucky Pets logo"
+          />
+          <div class="navbar__links--isOnDesktop">
+            <a href="#productsSection" class="hover-underline-animation"
+              >Products</a
+            >
+            <a href="#petCareSection" class="hover-underline-animation"
+              >Pet Care</a
+            >
+            <a href="#aboutUsSection" class="hover-underline-animation"
+              >About Us</a
+            >
+            <a href="#contactUsSection" class="hover-underline-animation"
+              >Contact Us</a
+            >
+          </div>
+          <label class="hamburger">
+            <input type="checkbox" id="hamburgerCheckbox" />
+            <svg viewBox="0 0 32 32">
+              <path
+                class="line line-top-bottom"
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+              ></path>
+              <path class="line" d="M7 16 27 16"></path>
+            </svg>
+          </label>
+        </nav>
+        <div id="myNav" class="overlay">
+          <div class="overlay-content">
+            <a href="#productsSection" id="navbar__products__link--isMobile"
+              >Products</a
+            >
+            <a href="#petCareSection" id="navbar__petcare__link--isMobile"
+              >Pet Care</a
+            >
+            <a href="#aboutUsSection" id="navbar__aboutus__link--isMobile"
+              >About Us</a
+            >
+            <a href="#contactUsSection" id="navbar__contactus__link--isMobile"
+              >Contact Us</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container hero__container">
-      <section class="hero" id="heroSection">
-        <div>
+      <div class="hero container" id="heroSection">
+        <div class="hero__text__content__container">
           <h1>Fuel your furry friend's appetite with Lucky Pets.</h1>
           <p>
             Premium pet products made with the highest quality ingredients and
@@ -94,18 +94,10 @@
           </p>
           <a href="#productsSection" class="hero__cta__btn">
             Explore Our Products
-          </a>
+          </a> 
         </div>
-        <div>
-          <img
-            src="assets/images/sample-hero-with-blob.webp"
-            alt="Image of a cat yawning"
-            width="508"
-            height="285"
-          />
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <section class="products" id="productsSection">
       <div class="container">
         <div class="products__heading__container">
@@ -128,7 +120,7 @@
         <div class="products__grid">
           <div class="products__card">
             <img
-              src="assets/images/all-stages-cat-food.webp"
+              src="assets/images/all-stages-cat-food-with-blob.png"
               alt="All Stages Cat Food Product image"
               width="167"
               height="93"
@@ -141,6 +133,14 @@
                 and coat.
               </p>
             </div>
+            <div class="products__card__buttons__container">
+              <button
+              id="all-stages-nutritional-analysis-btn"
+              class="products__card__button"
+              onclick="openModal()"
+            >
+              View Nutritional Profiling
+            </button>
             <button
               id="all-stages-cat-food-btn"
               class="products__card__button"
@@ -148,10 +148,11 @@
             >
               See More Details
             </button>
+            </div>
           </div>
           <div class="products__card">
             <img
-              src="assets/images/kitten-cat-food.webp"
+              src="assets/images/kitten-cat-food-with-blob-min.png"
               alt="Kitten Cat Food"
               width="167"
               height="93"
@@ -164,6 +165,14 @@
                 and brain while aiding digestion.
               </p>
             </div>
+            <div class="products__card__buttons__container">
+              <button
+              class="products__card__button"
+              onclick="openModal()"
+              id="kitten-cat-food-nutritional-analysis-btn"
+            >
+              View Nutritional Profiling
+            </button>
             <button
               class="products__card__button"
               onclick="openModal()"
@@ -171,96 +180,100 @@
             >
               See More Details
             </button>
-          </div>
-        </div>
-        <!-- Benefits Section -->
-        <div class="products__benefits__container">
-          <h1>What's in it for your pets?</h1>
-          <div class="products__benefits__grid">
-            <div class="products__benefits__card">
-              <img
-                src="assets/images/brain-icon.webp"
-                alt="Brain icon"
-                loading="lazy"
-                width="256"
-                height="144"
-              />
-              <p>Improves Brain & Nervous System Functions</p>
-            </div>
-            <div class="products__benefits__card">
-              <img
-                src="assets/images/cat-icon.webp"
-                alt="Cat icon"
-                loading="lazy"
-                width="256"
-                height="144"
-              />
-              <p>Healthier Skin and Shinier Coat</p>
-            </div>
-            <div class="products__benefits__card">
-              <img
-                src="assets/images/bone.webp"
-                alt="Bone icon"
-                loading="lazy"
-                width="256"
-                height="144"
-              />
-              <p>Stronger Bones and Teeth</p>
-            </div>
-            <div class="products__benefits__card">
-              <img
-                src="assets/images/view.webp"
-                alt="Eye icon"
-                loading="lazy"
-                width="256"
-                height="144"
-              />
-              <p>Nourishes Eyesight</p>
-            </div>
-            <div class="products__benefits__card">
-              <img
-                src="assets/images/nutrient.webp"
-                alt="Nutrient icon"
-                loading="lazy"
-                width="256"
-                height="144"
-              />
-              <p>Easier Nutrient Absorption</p>
-            </div>
-            <div class="products__benefits__card">
-              <img
-                src="assets/images/hair.webp"
-                alt="Hair icon"
-                loading="lazy"
-                width="256"
-                height="144"
-              />
-              <p>More Hairball Control</p>
-            </div>
-            <div class="products__benefits__card">
-              <img
-                src="assets/images/aroma.webp"
-                alt="Aroma icon"
-                loading="lazy"
-                width="256"
-                height="144"
-              />
-              <p>Reduces Stool Odour</p>
-            </div>
-            <div class="products__benefits__card">
-              <img
-                src="assets/images/immune-system.webp"
-                alt="Immune system icon"
-                loading="lazy"
-                width="256"
-                height="144"
-              />
-              <p>Strengthens Immune System</p>
             </div>
           </div>
         </div>
-        <!-- End of Benefits Section -->
       </div>
+    </section>
+    <!-- New What is in it for your pets section -->
+    <section class="catfood__benefits">
+      <!-- Benefits Section -->
+      <div class="products__benefits__container">
+        <h1>What's in it for your pets?</h1>
+        <div class="products__benefits__grid">
+          <div class="products__benefits__card">
+            <img
+              src="assets/images/brain-icon.webp"
+              alt="Brain icon"
+              loading="lazy"
+              width="256"
+              height="144"
+            />
+            <p>Improves Brain & Nervous System Functions</p>
+          </div>
+          <div class="products__benefits__card">
+            <img
+              src="assets/images/cat-icon.webp"
+              alt="Cat icon"
+              loading="lazy"
+              width="256"
+              height="144"
+            />
+            <p>Healthier Skin and Shinier Coat</p>
+          </div>
+          <div class="products__benefits__card">
+            <img
+              src="assets/images/bone.webp"
+              alt="Bone icon"
+              loading="lazy"
+              width="256"
+              height="144"
+            />
+            <p>Stronger Bones and Teeth</p>
+          </div>
+          <div class="products__benefits__card">
+            <img
+              src="assets/images/view.webp"
+              alt="Eye icon"
+              loading="lazy"
+              width="256"
+              height="144"
+            />
+            <p>Nourishes Eyesight</p>
+          </div>
+          <div class="products__benefits__card">
+            <img
+              src="assets/images/nutrient.webp"
+              alt="Nutrient icon"
+              loading="lazy"
+              width="256"
+              height="144"
+            />
+            <p>Easier Nutrient Absorption</p>
+          </div>
+          <div class="products__benefits__card">
+            <img
+              src="assets/images/hair.webp"
+              alt="Hair icon"
+              loading="lazy"
+              width="256"
+              height="144"
+            />
+            <p>More Hairball Control</p>
+          </div>
+          <div class="products__benefits__card">
+            <img
+              src="assets/images/aroma.webp"
+              alt="Aroma icon"
+              loading="lazy"
+              width="256"
+              height="144"
+            />
+            <p>Reduces Stool Odour</p>
+          </div>
+          <div class="products__benefits__card">
+            <img
+              src="assets/images/immune-system.webp"
+              alt="Immune system icon"
+              loading="lazy"
+              width="256"
+              height="144"
+            />
+            <p>Strengthens Immune System</p>
+          </div>
+        </div>
+      </div>
+      <!-- End of Benefits Section -->
     </section>
     <div class="scrollingTextContainer">
       <div class="scroll">
@@ -332,6 +345,30 @@
         </p>
       </div>
     </section>
+    <section class="pricing">
+      <div class="container">
+        <div class="pricing__text__content">
+          <p>Exploring Affordability</p>
+          <h1>Our Pricing</h1>
+        </div>
+        <div class="pricing__grid">
+          <div class="pricing__card"> 
+            <img src="assets/images/kitten-cat-food-with-blob-min.png" alt="Kitten Cat Food Packaging">
+            <h1>Kitten Cat Food 20Kg</h1>
+            <p>Resellers | ₱2,700.00</p>
+            <p>Suggested Retail Price | ₱3,000.00</p>
+            <p>Per Kilo | ₱150.00</p>
+          </div>
+          <div class="pricing__card">
+            <img src="assets/images/all-stages-cat-food-with-blob.png" alt="All Stages Cat Food Packaging">
+            <h1>All Stages Cat Food 20Kg</h1>
+            <p>Resellers | ₱2,600.00</p>
+            <p>Suggested Retail Price | ₱2,900.00</p>
+            <p>Per Kilo | ₱145.00</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- <section class="testimonials__container">
       <div class="container">
         <p>Stories of Love and Joy from Lucky Pets' Family of Furry Friends</p>
@@ -396,7 +433,7 @@
       </div>
     </section> -->
     <section class="proposition">
-      <h1>Enhancing lives, one bowl at a time</h1>
+      <h1>Better Protein-to-Price Ratio than the Competition</h1>
     </section>
     <section class="brandedges">
       <div class="container">
@@ -560,11 +597,12 @@
       <div class="container">
         <div>
           <img
-            src="assets/images/logo.webp"
+            src="assets/images/lpc-logo-navbar.png"
             alt="Lucky Pets logo on the footer"
-            width="100"
-            height="56"
+            width="16000"
+            height="9000"
             loading="lazy"
+            class="footer__logo"
           />
         </div>
         <div class="footer__links__grid__container">
