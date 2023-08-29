@@ -207,8 +207,7 @@ h6 {
   margin-bottom: 0;
 }
 .proposition {
-  /* background: url("/assets/images/cat-faces-background.jpg") no-repeat center; */
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/cat-faces-background.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/images/cat-faces-background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   padding: 3.125rem 1rem;
