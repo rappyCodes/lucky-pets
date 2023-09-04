@@ -500,7 +500,7 @@ footer img {
   margin-top: 1.25rem;
 }
 .products__card__button:hover,
-.brochure-dl button:hover {
+.brochure-dl button:hover, .blog__navbar a:hover {
   background-color: #ff7009;
 }
 .products__benefits__container h1 {
@@ -620,6 +620,52 @@ footer img {
   flex-direction: column;
   gap: .625rem;
   margin-top: 1rem;
+}
+.september__blog__container h1 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: .625rem;
+  font-size: clamp(32px, 5vw, 40px);
+}
+.september__blog__container p {
+  font-family: 'Lora', sans-serif;
+  margin-bottom: .625rem;
+  text-align: justify;
+}
+.september__blog__container img {
+  margin: 1.25rem 0;
+}
+.blog__title {
+  margin-top: 1.5625rem;
+}
+.blog__navbar {
+  background-color: #fee5cc;
+  padding: 1.25rem;
+}
+.blog__navbar a {
+  border: none;
+  outline: none;
+  background-color: #ff8e3c;
+  display: grid;
+  place-items: center;
+  padding: 5px 15px;
+  border-radius: 100px;
+  width: fit-content;
+  text-decoration: none;
+  color: #333333;
+  transition: all .3s;
+}
+.september__blog__container {
+  padding: 2.5rem 0;
+}
+.references__container h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: .8125rem;
+}
+.references__container a {
+  font-family: 'Lora', sans-serif;
+  text-decoration: none;
+  color: #333333;
+  font-size: .8125rem;
 }
 @media only screen and (max-width: 575.9808px) {
   .container {
@@ -821,6 +867,10 @@ footer img {
   .pricing__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .september__blog__container .container{
+    max-width: 75ch;
+    margin: 0 auto;
+  }
 }
 /* Desktop Layout */
 @media only screen and (min-width: 1024px) {
@@ -982,6 +1032,14 @@ footer img {
   .products__card__buttons__container {
     flex-direction: row;
     align-items: center;
+  }
+  .blog__image {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .blog__image img {
+    border-radius: .625rem;
+    margin: 50px 0;
   }
 }
 /* End */
